@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Bootcamp Helper — Extensão MV3</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;max-width:880px;margin:32px auto;padding:0 16px}
+    header{display:flex;gap:14px;align-items:center}
+    .logo{width:64px}
+    .card{border:1px solid #e6e6e6;padding:16px;border-radius:8px;margin-top:16px}
+    pre{background:#f7f7f7;padding:12px;border-radius:6px;overflow:auto}
+    a.btn{display:inline-block;padding:8px 12px;border-radius:6px;border:1px solid #0b63ff;color:#0b63ff;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="../src/assets/logo.svg" class="logo" alt="logo"/>
+    <div>
+      <h1>Bootcamp Helper</h1>
+      <p class="muted">Extensão exemplo Chrome (Manifest V3). Popup + Service Worker + Content Script.</p>
+    </div>
+  </header>
+
+  <div class="card">
+    <h2>O que faz</h2>
+    <p>Tem um popup que envia um <code>PING</code> para o service worker, abre uma página de documentação do Chrome e um content script que destaca links na página <strong>https://developer.chrome.com/*</strong>.</p>
+
+    <h3>Instalação manual</h3>
+    <ol>
+      <li>Baixe o pacote (.zip) ou clone o repositório.</li>
+      <li>Abra <code>chrome://extensions</code> no Chrome e ative <em>Developer mode</em>.</li>
+      <li>Clique em <strong>Load unpacked</strong> e selecione a pasta <code>my-chrome-extension</code>.</li>
+    </ol>
+
+    <a class="btn" href="../my-chrome-extension.zip" download>Download (.zip)</a>
+  </div>
+
+  <div class="card">
+    <h2>README</h2>
+    <p>Incluído no repositório com instruções completas.</p>
+  </div>
+
+  <footer style="margin-top:24px;color:#666;font-size:13px">
+    Publicar em GitHub Pages: Settings → Pages → Branch: main → Folder: /docs
+  </footer>
+</body>
+</html>
